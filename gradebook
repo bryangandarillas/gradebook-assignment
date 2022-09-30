@@ -1,0 +1,27 @@
+#create subject list
+subjects = ["physics", "calculus", "poetry", "history", "ITP 270"]
+
+#create grades list
+grades = [98, 97, 85, 88, 100]
+
+#make paralel list with both lists
+gradebook = [ ["physics", 98], ["calculus", 97], ["poetry", 85], ["history", 88], ["ITP 270", 100]]
+print (gradebook)
+
+#add new subjects and grades
+gradebook.append(["computer science", 100])
+gradebook.append(["visual arts", 93])
+
+#add 5 points to visual arts
+gradebook[5] = ["visual arts", 98]
+
+#switch numerical to pass/fail
+gradebook[2].remove(85)
+gradebook[2].append("Pass")
+
+#create gradebook for last semester
+last_semester_gradebook = [["English", 92], ["biology", 83], ["networking", 91]]
+
+#combine both lists
+full_gradebook = last_semester_gradebook + gradebook
+print (full_gradebook)
